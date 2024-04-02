@@ -16,7 +16,7 @@ async function main() {
     },
     select: {
       name: true,
-      userPreference: true
+      userPreference: { select: { id: true } }
     }
   });
   console.log(user);
